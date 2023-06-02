@@ -22,5 +22,16 @@ function isPowerOfTwo(n) {
 // or
 
 function isPowerOfTwo(n) {
-  return n === 0 ? false : (n & (n - 1)) == 0
+  return n === 0 ? false : (n & (n - 1)) == 0;
+}
+
+// or
+
+function isPowerOfTwo(n) {
+  if(n == 1)
+    return true
+  if(n < 1)
+    return false
+
+  return isPowerOfTwo(n / 2)
 }
