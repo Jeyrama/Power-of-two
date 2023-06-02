@@ -15,3 +15,12 @@ Beware of certain edge cases - for example,
 
 // Solution
 
+function isPowerOfTwo(n) {
+  return Number.isInteger(Math.log2(n));
+}
+
+// or
+
+function isPowerOfTwo(n) {
+  return n === 0 ? false : (n & (n - 1)) == 0
+}
